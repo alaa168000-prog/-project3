@@ -96,6 +96,89 @@
             height: 100%;
         }
         
+.application-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .application-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .test-card {
+            border-left: 5px solid;
+            background-color: white;
+        }
+        
+        .color-palette {
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(45deg, #E63946, #1D3557, #2A9D8F, #FFB703);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--primary-blue);">
+
+<div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-palette2 me-2"></i>ألوان الحياة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#colors">الألوان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#psychology">علم النفس اللوني</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#applications">التطبيقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">المعرض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#test">اختبار اللون</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">ألوان الحياة</h1>
+            <p class="lead mb-4">اكتشف عالم الألوان الساحر وتأثيرها على مشاعرنا وسلوكياتنا</p>
+            <a href="#colors" class="btn btn-light btn-lg me-2">استكشف الألوان</a>
+            <a href="#test" class="btn btn-outline-light btn-lg">اختبر شخصيتك</a>
 
 
 
