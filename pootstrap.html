@@ -481,6 +481,65 @@
             </div>
         </div>
     </footer>
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function calculateResult() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked')?.value,
+                q2: document.querySelector('input[name="q2"]:checked')?.value
+            };
+            
+            if (!answers.q1 || !answers.q2) {
+                alert('يرجى الإجابة على جميع الأسئلة');
+                return;
+            }
+            
+            // حساب النتيجة المبسطة
+            const colorCount = {red: 0, blue: 0, green: 0, yellow: 0};
+            colorCount[answers.q1]++;
+            colorCount[answers.q2]++;
+            
+            let maxColor = 'red';
+            for (const color in colorCount) {
+                if (colorCount[color] > colorCount[maxColor]) {
+                    maxColor = color;
+                }
+            }
+            
+            // عرض النتيجة
+            const resultDiv = document.getElementById('result');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultDescription = document.getElementById('resultDescription');
+            
+            const results = {
+                red: {
+                    title: 'أنت شخصية حمراء',
+                    description: 'أنت شخص طموح، حازم، وحيوي. تحب التحديات وتبحث عن القيادة. طاقتك العالية تجذب الآخرين إليك.'
+                },
+                blue: {
+                    title: 'أنت شخصية زرقاء',
+                    description: 'أنت شخص هادئ، عميق، وموثوق. تفضل الاستقرار والتنظيم. الآخرون يرون فيك الحكمة والثقة.'
+                },
+                green: {
+                    title: 'أنت شخصية خضراء',
+                    description: 'أنت شخص متعاطف، متوازن، وصبور. تحب الطبيعة وتبحث عن الانسجام. أنت مصدر للاستقرار لمن حولك.'
+                },
+                yellow: {
+                    title: 'أنت شخصية صفراء',
+                    description: 'أنت شخص متفائل، اجتماعي، ومبدع. تجلب البهجة والطاقة الإيجابية. تحب التواصل مع الآخرين.'
+                }
+            };
+            
+            resultTitle.textContent = results[maxColor].title;
+            resultDescription.textContent = results[maxColor].description;
+            resultDiv.style.display = 'block';
+            
+            // التمرير إلى النتيجة
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
 
 
