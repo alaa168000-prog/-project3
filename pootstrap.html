@@ -44,6 +44,58 @@
             color: var(--primary-blue);
         }
 
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .color-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            color: white;
+            height: 100%;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .color-card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .psychology-section {
+            background-color: #f1faee;
+        }
+        
+        .application-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
 
 
 
