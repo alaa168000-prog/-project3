@@ -29,6 +29,112 @@
         .navbar-brand {
             font-weight: bold;
         }
+        .hero-section {
+            background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.9)), url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .color-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            color: white;
+            height: 100%;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .color-card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .psychology-section {
+            background-color: #f1faee;
+        }
+        
+        .application-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .application-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .application-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .test-card {
+            border-left: 5px solid;
+            background-color: white;
+        }
+        
+        .color-palette {
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(45deg, #E63946, #1D3557, #2A9D8F, #FFB703);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
     </style>
 </head>
 
