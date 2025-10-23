@@ -245,6 +245,88 @@
             </div>
         </div>
     </section>
+    <!-- اختبار اللون -->
+    <section id="test" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">اكتشف لون شخصيتك</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="colorTest">
+                                <div class="mb-4">
+                                    <h5>1. كيف تفضل قضاء وقت فراغك؟</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1a" value="red">
+                                        <label class="form-check-label" for="q1a">
+                                            ممارسة الرياضة أو الأنشطة المليئة بالتحدي
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1b" value="blue">
+                                        <label class="form-check-label" for="q1b">
+                                            القراءة أو التأمل في مكان هادئ
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1c" value="green">
+                                        <label class="form-check-label" for="q1c">
+                                            التنزه في الطبيعة أو البستنة
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1d" value="yellow">
+                                        <label class="form-check-label" for="q1d">
+                                            مقابلة الأصدقاء أو حضور مناسبات اجتماعية
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>2. كيف يتعامل الآخرون معك؟</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2a" value="red">
+                                        <label class="form-check-label" for="q2a">
+                                            كقائد طبيعي وحازم
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2b" value="blue">
+                                        <label class="form-check-label" for="q2b">
+                                            كشخص موثوق وحكيم
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2c" value="green">
+                                        <label class="form-check-label" for="q2c">
+                                            كشخص متعاطف ومتوازن
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2d" value="yellow">
+                                        <label class="form-check-label" for="q2d">
+                                            كشخص مرح ومتفائل
+                                        </label>
+
+</div>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary btn-lg" onclick="calculateResult()">اكتشف لونك</button>
+                                </div>
+                            </form>
+                            
+                            <div id="result" class="mt-4 text-center" style="display: none;">
+                                <h4 id="resultTitle"></h4>
+                                <p id="resultDescription"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 </body>
