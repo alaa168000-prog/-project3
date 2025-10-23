@@ -1,338 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ألوان الحياة</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-
-    <style>
-        body {
-            font-family: 'Tahoma', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        h1 {
-            color: #198754;
-            font-weight: bold;
-        }
-
-        .card {
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .nature {
-            background-color: #d7f5e3;
-        }
-
-        .energy {
-            background-color: #ffe5d1;
-        }
-
-        .calm {
-            background-color: #d8efff;
-        }
-
-        .friends {
-            background-color: #fff0d9;
-        }
-
-        .gradient-bg {
-            background: linear-gradient(45deg, #E63946, #1D3557, #2A9D8F, #FFB703);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 15px;
-            margin-bottom: 50px;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        footer {
-            background-color: #198754;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: white;
-            margin: 0 8px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">ألوان الحياة</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#nature">ألوان الطبيعة</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#energy">لون الطاقة</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#calm">لون الهدوء</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#friends">مقابلة الأصدقاء</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container text-center mt-5 mb-5">
-        <h1>ألوان الحياة</h1>
-        <p class="lead mb-4">اكتشف معاني الألوان وتأثيرها على طاقتك ومزاجك</p>
-
-        <div class="row g-4">
-            <!-- ألوان الطبيعة -->
-            <div class="col-md-6 col-lg-3" id="nature">
-                <div class="card nature p-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">ألوان الطبيعة 🌿</h5>
-                        <p class="card-text">ألوان تعكس الهدوء والتوازن وتجدد الطاقة الإيجابية.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- لون الطاقة -->
-            <div class="col-md-6 col-lg-3" id="energy">
-                <div class="card energy p-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-danger">لون الطاقة 🔥</h5>
-                        <p class="card-text">ألوان تعزز الحيوية والنشاط وتمنحك دافعًا قويًا للعمل.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- لون الهدوء -->
-            <div class="col-md-6 col-lg-3" id="calm">
-                <div class="card calm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">لون الهدوء 🌊</h5>
-                        <p class="card-text">ألوان تبعث الطمأنينة وتساعد على التركيز والاسترخاء.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- مقابلة الأصدقاء -->
-            <div class="col-md-6 col-lg-3" id="friends">
-                <div class="card friends p-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">مقابلة الأصدقاء 🤝</h5>
-                        <p class="card-text">ألوان دافئة تمثل الودّ، وتبعث مشاعر السعادة والانسجام.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gradient Section -->
-        <div class="gradient-bg mt-5 mb-5">
-            <h3>تجربة اللون</h3>
-            <p>لاحظ تأثير هذا التدرج اللوني على مزاجك</p>
-        </div>
-
-        <!-- Carousel -->
-        <div id="colorCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                        class="d-block w-100" alt="الأحمر">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                        <h5>قوة الأحمر</h5>
-                        <p>لون الطاقة والعاطفة الجريئة</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                        class="d-block w-100" alt="الأزرق">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                        <h5>صفاء الأزرق</h5>
-                        <p>لون الهدوء والثقة والاستقرار</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                        class="d-block w-100" alt="الأخضر">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                        <h5>انتعاش الأخضر</h5>
-                        <p>لون الطبيعة والنمو والتوازن</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#colorCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#colorCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-
-    </div>
-    <!-- اختبار اللون -->
-<section id="test" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">اكتشف لون شخصيتك</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card shadow">
-          <div class="card-body p-4">
-            <form id="colorTest">
-              <!-- السؤال 1 -->
-              <div class="mb-4">
-                <h5>1. كيف تفضل قضاء وقت فراغك؟</h5>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" id="q1a" value="red">
-                  <label class="form-check-label" for="q1a">ممارسة الرياضة أو الأنشطة المليئة بالتحدي</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" id="q1b" value="blue">
-                  <label class="form-check-label" for="q1b">القراءة أو التأمل في مكان هادئ</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" id="q1c" value="green">
-                  <label class="form-check-label" for="q1c">التنزه في الطبيعة أو البستنة</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" id="q1d" value="yellow">
-                  <label class="form-check-label" for="q1d">مقابلة الأصدقاء أو حضور مناسبات اجتماعية</label>
-                </div>
-              </div>
-
-              <!-- السؤال 2 -->
-              <div class="mb-4">
-                <h5>2. كيف يتعامل الآخرون معك؟</h5>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" id="q2a" value="red">
-                  <label class="form-check-label" for="q2a">كقائد طبيعي وحازم</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" id="q2b" value="blue">
-                  <label class="form-check-label" for="q2b">كشخص موثوق وحكيم</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" id="q2c" value="green">
-                  <label class="form-check-label" for="q2c">كشخص متعاطف ومتوازن</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" id="q2d" value="yellow">
-                  <label class="form-check-label" for="q2d">كشخص مرح ومتفائل</label>
-                </div>
-              </div>
-
-              <div class="text-center">
-                <button type="button" class="btn btn-primary btn-lg" onclick="calculateResult()">اكتشف لونك</button>
-              </div>
-            </form>
-
-            <!-- عرض النتيجة -->
-            <div id="result" class="mt-4 text-center" style="display: none;">
-              <h4 id="resultTitle"></h4>
-              <p id="resultDescription"></p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-function calculateResult() {
-  const answers = {
-    q1: document.querySelector('input[name="q1"]:checked')?.value,
-    q2: document.querySelector('input[name="q2"]:checked')?.value
-  };
-  if (!answers.q1 || !answers.q2) {
-    alert('يرجى الإجابة على جميع الأسئلة');
-    return;
-  }
-
-  const colorCount = {red: 0, blue: 0, green: 0, yellow: 0};
-  colorCount[answers.q1]++;
-  colorCount[answers.q2]++;
-
-  let maxColor = 'red';
-  for (const color in colorCount) {
-    if (colorCount[color] > colorCount[maxColor]) maxColor = color;
-  }
-
-  const results = {
-    red: {
-      title: 'أنت شخصية حمراء',
-      description: 'أنت شخص طموح، حازم، وحيوي. تحب التحديات وتبحث عن القيادة. طاقتك العالية تجذب الآخرين إليك.'
-    },
-    blue: {
-      title: 'أنت شخصية زرقاء',
-      description: 'أنت شخص هادئ، عميق، وموثوق. تفضل الاستقرار والتنظيم. الآخرون يرون فيك الحكمة والثقة.'
-    },
-    green: {
-      title: 'أنت شخصية خضراء',
-      description: 'أنت شخص متعاطف، متوازن، وصبور. تحب الطبيعة وتبحث عن الانسجام. أنت مصدر للاستقرار لمن حولك.'
-    },
-    yellow: {
-      title: 'أنت شخصية صفراء',
-      description: 'أنت شخص متفائل، اجتماعي، ومبدع. تجلب البهجة والطاقة الإيجابية. تحب التواصل مع الآخرين.'
-    }
-  };
-
-  const resultDiv = document.getElementById('result');
-  document.getElementById('resultTitle').textContent = results[maxColor].title;
-  document.getElementById('resultDescription').textContent = results[maxColor].description;
-  resultDiv.style.display = 'block';
-  resultDiv.scrollIntoView({ behavior: 'smooth' });
-}
-</script>
-<!-- اقتباس -->
-<section class="quote-section" id="quote">
-    <div class="container text-center">
-        <h2 class="mb-3">"الحياة لوحة... وكل يوم لون جديد."</h2>
-        <p>– آلاء مراد</p>
-    </div>
-</section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <p>©️ 2023 ألوان الحياة | تصميم: آلاء مراد</p>
-        <div class="mt-2">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-pinterest"></i></a>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
