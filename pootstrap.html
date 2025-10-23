@@ -17,13 +17,75 @@
       color: #198754;
       font-weight: bold;
     }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .nature {
+      background-color: #d7f5e3;
+    }
+    .energy {
+      background-color: #ffe5d1;
+    }
+    .calm {
+      background-color: #d8efff;
+    }
+    .friends {
+      background-color: #fff0d9;
+    }
   </style>
 </head>
 <body>
 
-  <div class="container text-center mt-5">
+  <div class="container text-center mt-5 mb-5">
     <h1>ألوان الحياة</h1>
-    <p class="lead">اكتشف معاني الألوان وتأثيرها على طاقتك ومزاجك</p>
+    <p class="lead mb-4">اكتشف معاني الألوان وتأثيرها على طاقتك ومزاجك</p>
+
+    <div class="row g-4">
+      <!-- ألوان الطبيعة -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card nature p-3">
+          <div class="card-body">
+            <h5 class="card-title text-success">ألوان الطبيعة 🌿</h5>
+            <p class="card-text">ألوان تعكس الهدوء والتوازن وتجدد الطاقة الإيجابية.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- لون الطاقة -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card energy p-3">
+          <div class="card-body">
+            <h5 class="card-title text-danger">لون الطاقة 🔥</h5>
+            <p class="card-text">ألوان تعزز الحيوية والنشاط وتمنحك دافعًا قويًا للعمل.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- لون الهدوء -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card calm p-3">
+          <div class="card-body">
+            <h5 class="card-title text-primary">لون الهدوء 🌊</h5>
+            <p class="card-text">ألوان تبعث الطمأنينة وتساعد على التركيز والاسترخاء.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مقابلة الأصدقاء -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card friends p-3">
+          <div class="card-body">
+            <h5 class="card-title text-warning">مقابلة الأصدقاء 🤝</h5>
+            <p class="card-text">ألوان دافئة تمثل الودّ، وتبعث مشاعر السعادة والانسجام.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap JS -->
