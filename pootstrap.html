@@ -400,6 +400,10 @@
             resultTitle.textContent = results[maxColor].title;
             resultDescription.textContent = results[maxColor].description;
             resultDiv.style.display = 'block';
+            // التمرير إلى النتيجة
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
 
 
