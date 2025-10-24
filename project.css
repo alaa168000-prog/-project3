@@ -5,18 +5,22 @@ body {
     padding: 0;
     background-color: #fdfaf7;
     color: #333;
+    line-height: 1.6;
 }
+
 /* الرأس */
 header {
     background-color: #a47148;
     color: white;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
     margin: 0 0 10px;
-    font-size: 28px;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 nav {
@@ -24,6 +28,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav ul {
@@ -38,14 +43,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #ffe6cc;
 }
 
 .login-btn {
-    margin-right: 20px;
     background-color: white;
     color: #a47148;
     border: none;
@@ -53,31 +59,36 @@ nav ul li a:hover {
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .login-btn:hover {
     background-color: #f4e1ce;
 }
+
 /* القسم الرئيسي */
 main {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .intro h2 {
     color: #6d3b20;
-    font-size: 26px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .intro p {
-    color: #666;
-    margin-bottom: 40px;
+    color: #555;
+    margin-bottom: 50px;
+    font-size: 17px;
 }
+
 /* المنتجات */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
     justify-items: center;
 }
 
@@ -86,23 +97,33 @@ main {
     border: 1px solid #eee;
     border-radius: 15px;
     padding: 15px;
-    width: 250px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    width: 260px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
     transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .product img {
     width: 100%;
+    height: 230px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .product h3 {
     color: #4c2c1b;
     font-size: 20px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 15px;
+    color: #666;
+    margin: 8px 0;
 }
 
 .price {
@@ -110,6 +131,7 @@ main {
     font-weight: bold;
     color: #a47148;
     margin: 10px 0;
+    font-size: 17px;
 }
 
 .buy-btn {
@@ -120,22 +142,24 @@ main {
     padding: 10px 15px;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.3s;
 }
 
 .buy-btn:hover {
     background-color: #8d5f3a;
 }
+
 /* التذييل */
 footer {
     background-color: #f2e6da;
     color: #4c2c1b;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 footer .social-links {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 footer .social-links a {
@@ -143,8 +167,16 @@ footer .social-links a {
     color: #4c2c1b;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 footer .social-links a:hover {
+    color: #a47148;
     text-decoration: underline;
+}
+
+footer p:last-child {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6d3b20;
 }
