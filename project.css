@@ -125,3 +125,26 @@ main {
 .buy-btn:hover {
     background-color: #8d5f3a;
 }
+/* التذييل */
+footer {
+    background-color: #f2e6da;
+    color: #4c2c1b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .social-links {
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #4c2c1b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
