@@ -1,0 +1,8 @@
+/* إعدادات عامة */
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf7;
+    color: #333;
+}
