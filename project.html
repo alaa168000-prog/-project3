@@ -1,88 +1,81 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <link rel="stylesheet" href="style.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متجر العطور الطبيعية</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>متجر العطور الطبيعية</h1>
-    <nav>
-        <ul>
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">منتجاتنا</a></li>
-            <li><a href="#">عن المتجر</a></li>
-            <li><a href="#">اتصل بنا</a></li>
-            <li><a href="#">البحث</a></li>
-            <li><a href="#">السلة</a></li>
-        </ul>
-        <button class="login-btn">تسجيل الدخول</button>
-    </nav>
-</header>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>متجر العطور الطبيعية</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">منتجاتنا</a></li>
+                <li><a href="#">عن المتجر</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+                <li><a href="#">البحث</a></li>
+                <li><a href="#">السلة</a></li>
+            </ul>
+            <button class="login-btn">تسجيل الدخول</button>
+        </nav>
+    </header>
 
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <section class="intro">
+            <h2>عطورنا الطبيعية</h2>
+            <p>استمتع بروائح فريدة من أجود المكونات الطبيعية المختارة بعناية لتناسب ذوقك.</p>
+        </section>
 
- <main>
+        <section class="products">
+            <div class="product">
+                <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" alt="عطر الورد الدمشقي">
+                <h3>عطر الورد الدمشقي</h3>
+                <p>عطر ناعم برائحة الورد الدمشقي الفاخر يدوم طويلاً.</p>
+                <span class="price">250 SR</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
 
-<section class="intro">
-    <h2>عطورنا الطبيعية</h2>
-    <p>استمتع بروائح فريدة من أجود المكونات الطبيعية المختارة بعناية لتناسب ذوقك.</p>
-</section>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/965972/pexels-photo-965972.jpeg" alt="عطر العنبر الفاخر">
+                <h3>عطر العنبر الفاخر</h3>
+                <p>خليط مميز من العنبر والمسك يمنحك فخامة لا تضاهى.</p>
+                <span class="price">300 SR</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
 
-   
+            <div class="product">
+                <img src="https://images.pexels.com/photos/965986/pexels-photo-965986.jpeg" alt="عطر الفانيليا الخشبية">
+                <h3>عطر الفانيليا الخشبية</h3>
+                <p>عطر دافئ ومريح يجمع بين الفانيليا وخشب الصندل.</p>
+                <span class="price">270 SR</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
 
-  <section class="products">
-    <div class="product">
-        <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" alt="عطر الورد الدمشقي">
-        <h3>عطر الورد الدمشقي</h3>
-        <p>عطر ناعم برائحة الورد الدمشقي الفاخر يدوم طويلاً.</p>
-        <span class="price">250 SR</span>
-        <button class="buy-btn">أضف إلى السلة</button>
-    </div>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/965975/pexels-photo-965975.jpeg" alt="عطر الزهور البيضاء">
+                <h3>عطر الزهور البيضاء</h3>
+                <p>خليط من أزهار الياسمين واللافندر يمنحك إحساسًا بالانتعاش.</p>
+                <span class="price">230 SR</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
+        </section>
+    </main>
 
-    <div class="product">
-        <img src="https://images.pexels.com/photos/965972/pexels-photo-965972.jpeg" alt="عطر العنبر الفاخر">
-        <h3>عطر العنبر الفاخر</h3>
-        <p>خليط مميز من العنبر والمسك يمنحك فخامة لا تضاهى.</p>
-        <span class="price">300 SR</span>
-        <button class="buy-btn">أضف إلى السلة</button>
-    </div>
-
-    <div class="product">
-        <img src="https://images.pexels.com/photos/965986/pexels-photo-965986.jpeg" alt="عطر الفانيليا الخشبية">
-        <h3>عطر الفانيليا الخشبية</h3>
-        <p>عطر دافئ ومريح يجمع بين الفانيليا وخشب الصندل.</p>
-        <span class="price">270 SR</span>
-        <button class="buy-btn">أضف إلى السلة</button>
-    </div>
-
-    <div class="product">
-        <img src="https://images.pexels.com/photos/965975/pexels-photo-965975.jpeg" alt="عطر الزهور البيضاء">
-        <h3>عطر الزهور البيضاء</h3>
-        <p>خليط من أزهار الياسمين واللافندر يمنحك إحساسًا بالانتعاش.</p>
-        <span class="price">230 SR</span>
-        <button class="buy-btn">أضف إلى السلة</button>
-    </div>
-</section>
-
-
-   
- </main>
-
- <footer>
-    <p>تابعنا عبر:</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="http://wa.me/966500000000" target="_blank">WhatsApp</a>
-        <a href="http://facebook.com" target="_blank">Facebook</a>
-    </div>
-    <p>© 2025 متجر العطور الطبيعية. جميع الحقوق محفوظة.</p>
-</footer>
-
+    <!-- التذييل -->
+    <footer>
+        <p>تابعنا عبر:</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="http://wa.me/966500000000" target="_blank">WhatsApp</a>
+            <a href="http://facebook.com" target="_blank">Facebook</a>
+        </div>
+        <p>© 2025 متجر العطور الطبيعية. جميع الحقوق محفوظة.</p>
+    </footer>
 
 </body>
 </html>
-
